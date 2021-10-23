@@ -22,7 +22,10 @@ body{
     margin:0;
     padding:0;
     font-family: 'Gandom';
-
+    direction: rtl;
+}
+ul{
+    list-style: none;
 }
 header{
     width:100%;
@@ -99,4 +102,10 @@ header nav{
     font-weight:900px;
     color:#fff;
     font-size:50px;
+}
+.about-me i{
+    color:orangered;
+    background-color: #000;
+    padding:0.5rem;
+    border-radius:50%;
 }
