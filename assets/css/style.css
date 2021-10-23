@@ -27,7 +27,7 @@ body{
 header{
     width:100%;
     height:700px;
-    background: url(/assets/images/1620032638_34477_url.jpeg) center center/cover;
+    background: url(/assets/1620032638_34477_url.jpeg) center center/cover;
 }
 header nav{
     direction: rtl;
@@ -39,11 +39,10 @@ header nav{
     margin:0 auto;
     margin-top:8rem;
     width:50%;
-    background-color: #02095a;
-    padding:1rem;
-    border-radius:4px;
+    background-color:rgb(27, 27, 27);
+    border-radius:10px;
     border:2px solid #fff;
-
+    padding:01rem;
 }
 .text-box span{
     color:#fff;
@@ -56,10 +55,10 @@ header nav{
     content: "";
     position: absolute;
     right:0;
-    height:110%;
+    height:120%;
     border-right:2px solid #fff;
     left:-2px;
-    background-color:#02095a;
+    background-color:rgb(27,27,27);
     animation:5s textType;
     animation-iteration-count: infinite;
     animation-timing-function: steps(10);
