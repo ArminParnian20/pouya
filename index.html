@@ -13,7 +13,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="cont">
+   
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="assets/images/76146f91552e4f9db0eebd013a0ffeb1.png" alt="" style=" margin:0 2rem;height:40px;transform: scale(4);"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,12 +50,8 @@
        </div>
        </div>
      </div>
-     <div class="icon-box">
-       <a href=""><img src="assets/images/inesta.png" title="inestagam"></a>
-       <a href=""><img src="assets/images/free-whatsapp-icon-121-thumb.png" title="WhatsApp" ></a>
-       <a href=""><img src="assets/images/telegram_icon_178920.png" title="telegram" ></a>
 
-     </div>
+        </div>
     </header>
     <div class="about-me">
       <h2>درباره من</h2>
@@ -124,5 +122,33 @@
       </div>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
-</body>
+    <script src="assets/js/anime.js"></script>
+    <script>
+      const container=document.querySelector('.cont');
+      for(var i=0;i<=100;i++){
+         const blocks=document.createElement('div');
+         blocks.classList.add('block');
+         container.appendChild(blocks);
+      }
+      function animateBlockes(){
+        anime({
+          targets:'.block',
+          translateX:function(){
+            return anime.random(-700,700);
+          },
+          translateY:function(){
+            return anime.random(-500,500);
+          },
+          scale:function(){
+            return anime.random(1,5)
+          },
+          easing:'linear',
+          duration:3000,
+          delay:anime.stagger(10),
+          complete:animateBlockes,
+        })
+      }
+      animateBlockes()
+    </script>
+  </body>
 </html>
