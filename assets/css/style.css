@@ -140,3 +140,20 @@ header .cont{
 .scroll i:hover{
     background-color:#000;
 }
+.line{
+    width:2px;
+    height:100px;
+    background:red;
+    z-index:2;
+    margin:0 auto;
+}
+.contact-me img{
+     width:100px; 
+     padding:1rem;    
+     margin:0;
+}
+.contact-me .cont{
+    display:flex;
+    justify-content: center;
+    border-radius:5px;
+}
