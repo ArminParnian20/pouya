@@ -34,8 +34,8 @@ header{
     width:100%;
 }
 .logo{
-    width:50px;
-    transform: scale(1.5);
+    width:70px;
+    transform: scale(1.2);
     margin:0 0.5rem;
 }
 .line{
@@ -209,4 +209,13 @@ header{
 .scroll:hover{
   color:blue;
   background:rgba(0, 0, 0, 0.611);
+}
+.about{
+  text-align: justify;
+  line-height:2;
+}
+.lines{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
