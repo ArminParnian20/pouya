@@ -6,10 +6,12 @@ let body=document.querySelector('.website');
 
 window.addEventListener('load',()=>{
   setTimeout(()=>{
-       loading.style.display='none';
-    body.style.display='block';
+    loading.style.transform='scale(0)';
+    body.style.display='block'; 
+  },2000);
+  setTimeout(()=>{
+      loading.style.display='none';
   },3000)
- 
 })
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');

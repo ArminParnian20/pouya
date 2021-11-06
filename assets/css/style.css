@@ -53,6 +53,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition-duration:1s;
 }
 
 .clock {
@@ -186,6 +187,7 @@ header{
 }
 .website{
   display:none;
+  transition-duration:1s;
 }
 .scroll{
   padding:1rem;
