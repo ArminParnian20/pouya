@@ -5,8 +5,11 @@ let body=document.querySelector('.website');
 
 
 window.addEventListener('load',()=>{
-    loading.style.display='none';
+  setTimeout(()=>{
+       loading.style.display='none';
     body.style.display='block';
+  },3000)
+ 
 })
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
