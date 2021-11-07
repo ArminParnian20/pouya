@@ -5,7 +5,7 @@ window.addEventListener('load',()=>{
   setTimeout(()=>{
     body.style.display='block'; 
     loading.style.display='none';
-  },2000)
+  },1000)
 })
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
