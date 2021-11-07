@@ -1,0 +1,18 @@
+.box{
+    position: relative;
+    width:130px;
+    height:90px;
+    transform-style: preserve-3d;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: perspective(560px) rotateY(0deg);
+    } 
+    100%{
+        transform: perspective(560px) rotateY(360deg);
+    }
+ }
+ .box span{ 
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(120px);
+}

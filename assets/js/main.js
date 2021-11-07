@@ -1,17 +1,11 @@
-new WOW().init();
 
 let loading=document.querySelector('.load-box');
 let body=document.querySelector('.website');
-
-
 window.addEventListener('load',()=>{
   setTimeout(()=>{
-    loading.style.transform='scale(0)';
     body.style.display='block'; 
-  },2000);
-  setTimeout(()=>{
-      loading.style.display='none';
-  },3000)
+    loading.style.display='none';
+  },2000)
 })
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
@@ -32,7 +26,6 @@ function setDate() {
   const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
-
 setInterval(setDate, 1000);
 
 setDate();
