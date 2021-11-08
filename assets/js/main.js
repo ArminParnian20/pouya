@@ -1,6 +1,7 @@
 
 let loading=document.querySelector('.load-box');
 let body=document.querySelector('.website');
+
 window.addEventListener('load',()=>{
   setTimeout(()=>{
     body.style.display='block'; 
@@ -27,5 +28,5 @@ function setDate() {
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
 setInterval(setDate, 1000);
-
 setDate();
+
