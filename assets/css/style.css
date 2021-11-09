@@ -24,8 +24,25 @@ body{
   .bg{
   background:var(--color-bg);
 }
+.nav-b{
+  padding:0.2rem;
+  border-top:2px dotted var(--color-bg);
+}
 .bg-x{
   background-color:var(--color-bg-x);
+}
+.bg-f{
+  font-weight:900;
+  color:var(--color-bg-x);
+} 
+.icones{
+  display:flex;
+  justify-content: space-evenly;
+  padding:1rem;
+  padding-bottom:10rem;
+}
+.icones a{
+  color:var(--color-bg);
 }
 .c-f{
   color:var(--color-font);
@@ -40,7 +57,7 @@ html{
 .lamp{
   color:var(--color-bg);
   font-size:35px;
-  cursor: pointer;
+  cursor:pointer;
 }
 *{
     margin:0;

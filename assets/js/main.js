@@ -1,4 +1,3 @@
-
 let loading=document.querySelector('.load-box');
 let body=document.querySelector('.website');
 
@@ -8,10 +7,25 @@ window.addEventListener('load',()=>{
     loading.style.display='none';
   },1000)
 })
+let mode=0;
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
-
+let lamp=document.querySelector('.lamp');
+lamp.addEventListener('click',()=>{
+if(mode==0){
+  document.documentElement.style.setProperty('--color-bg-x','#1b262c');
+  document.documentElement.style.setProperty('--color-bg','#ffac41');
+  document.documentElement.style.setProperty('--color-font','#beebe9');
+  mode=1;
+}
+else{
+  document.documentElement.style.setProperty('--color-bg-x','#e6e2dd');
+  document.documentElement.style.setProperty('--color-bg','#d48166');
+  document.documentElement.style.setProperty('--color-font','#373a36');
+  mode=0;
+}
+})
 function setDate() {
   const now = new Date();
 
