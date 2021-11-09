@@ -32,9 +32,11 @@
 <div class="website">
   <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-n">
-      <div class="container-fluid">
-        <img src="assets/images/logo.png" class="logo animate__animated animate__bounceInRight animate-delay-2s">
-        <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="assets/images/logo.png" class="logo animate__animated animate__bounceInRight animate-delay-2s">
+      <h1 class="display-6 mx-2 text-success">pouya rajabi</h1>
+      <div class="container-fluid border-top pt-2">
+        <span class='w-auto'><i  class="fa fa-lightbulb lamp"></i></span>
+        <button class="navbar-toggler bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -159,15 +161,23 @@
   </div>
   <video src="assets/images/video_2021-11-07_15-09-20.mp4" poster="assets/images/aa.jpg" controls class="w-75 mt-5 mb-3"></video>
   </div>
-
-<a href="Gallery.html">Gallery</a>
+<div class="w-25 m-auto text-center mt-2">
+  <a href="Gallery.html" class="btn btn-danger mb-5">گالری</a>
+</div>
 </div>
        <script src="assets/js/bootstrap.min.js"></script>
-    <script src="animate files/wow.js"></script>
+       <script src="assets/fontawesome/js/all.js"></script>
+       <script src="assets/js/main.js"></script>
+       <script src="animate files/wow.js"></script>
     <script>
-      new WOW().init();
+  new WOW().init();
     </script>
-    <script src="assets/fontawesome/js/all.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script>
+      let lamp=document.querySelector('.lamp');
+    lamp.addEventListener('click',()=>{
+    console.log(2);
+    document.documentElement.style.setProperty('--color-bg-x','#000');
+  })
+    </script>
 </body>
 </html>

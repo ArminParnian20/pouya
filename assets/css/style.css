@@ -37,6 +37,11 @@ body{
 html{
     scroll-behavior:smooth;
 }
+.lamp{
+  color:var(--color-bg);
+  font-size:35px;
+  cursor: pointer;
+}
 *{
     margin:0;
     padding:0;
@@ -195,7 +200,7 @@ header{
 .scroll{
   padding:1rem;
   color:#000;
-  background:rgba(30, 87, 30, 0.555);
+  background:var(--color-bg);
   z-index:10; 
   padding:0.5rem 0.7rem; 
   border-radius:10%;
