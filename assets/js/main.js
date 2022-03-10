@@ -2,10 +2,10 @@ let loading=document.querySelector('.load-box');
 let body=document.querySelector('.website');
 
 window.addEventListener('load',()=>{
-  setTimeout(()=>{
+  
     body.style.display='block'; 
     loading.style.display='none';
-  },1000)
+ 
 })
 let mode=0;
 const secondHand = document.querySelector('.second-hand');
